@@ -1,1 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="xposed_description">מתאים פיצ'רים שהוצגו באנדרואיד N לגרסאות לוליפופ ומרשמלו!</string>
+
+    <string name="restart_systemui">אתחל SystemUI</string>
+    <string name="restart_systemui_message">אתה בטוח שאתה רוצה לאתחל את SystemUI?</string>
+    <string name="restart_broadcast_sent">שדר אתחול נשלח</string>
+    <string name="activity_about">על Android N-ify</string>
+    <string name="about_author">פותח על ידי @MrWasdennnoch</string>
+    <string name="about_translator">תורגם על ידי @idoideas</string> <!-- Insert your (preferably XDA) username here -->
+    <string name="about_version">גרסה %1$s (%2$d)</string>
+
+    <!-- prefs -->
+    <string name="prefs_not_readable"><![CDATA[<b>אזהרה:</b> קובץ ההעדפות לא קריא על ידי Xposed. לחץ כאן למידע נוסף&#8230;]]></string>
+    <string name="prefs_not_readable_description"><![CDATA[
+        Xposed לא יכול לקרוא את קובץ ההעדפות של המודולה הזאת, ערכי ברירת מחדל ישומשו במקום.
+        ישנם מספר דרכים לתקן את הבעיה הזו.  שימו לב ששגיאה זו קופצת אם מעולם
+        לא פתחתם את האפליקציה לפני כן.<br><br>
+        קודם כל, אתחלו את המכשיר (לא אתחול קל!)<br>
+        אם זה לא עוזר, נסו להתקין מחדש את המודולה.<br>
+        אם שני הניסיונות כושלים, אנא ודאו כי מצב ה- SELinux שלכם מוגדר כ- <i>permissive</i>.
+        <i>הכרחת</i> את SELinux עלולה לחסום את הגישה לקובץ ההעדפות. על מנת לשנות את המצב,
+        השתמשו באפליקציה <tt>SELinuxModeChanger</tt> שתוכלו להוריד
+        <a href="http://forum.xda-developers.com/showthread.php?t=2524485">מאשכול ה-XDA הזה</a>.<br>
+        אם גם זה נכשל, ככל הנראה תצטרכו לחיות עם ערכי ברירת מחדל, סליחה :(
+        ]]></string>
+
+    <string name="header_tweaks">טוויקים</string>
+    <string name="header_app">אפליקציה</string>
+
+    <string name="app_dark_theme_title">ערכת נושא כהה</string>
+    <string name="hide_launcher_icon_title">הסתר אייקון לאנצ'ר</string>
+    <string name="hide_launcher_icon">עלול לדרוש אתחול לאנצ'ר</string>
+    <string name="force_english_title">הכרח שפה אנגלית</string>
+    <string name="debug_log_title">לוג דיבאג</string>
+    <string name="debug_log">אזהרה: הצפת-לוג</string>
+
+    <string name="requires_android_version">דורש גרסת אנדרואיד %1$s</string>
+    <string name="not_activated">המודולה לא פעילה</string>
+
+    <string name="theme_colorPrimary">צבע ראשי</string>
+
+    <string name="header_lockscreen">מסך נעילה</string>
+    <!-- /prefs -->
+
+    <!-- SETTINGS -->
+    <string name="header_settings">הגדרות</string>
+    <string name="enable_settings_summaries_title">קיצורי הגדרות</string>
+    <string name="enable_settings_summaries">הצג את המידע הכי חשוב ישירות ב-Dashboard</string>
+    <string name="fix_sound_notif_tile_title">תקן את אריח "קול והתראות"</string>
+    <string name="fix_sound_notif_tile">כמה רומים משלבים את אריח ה-"קול והתראות". הפעל על מנת להציג את הקיצור המתאים לאריח זה.</string>
+    <string name="enable_n_platlogo_title">לוגו N ב-Easter Egg</string>
+
+    <string name="disconnected">מנותק</string>
+    <string name="disabled">מכובה</string>
+    <string name="off">כבוי</string>
+    <string name="on">דלוק</string>
+    <string name="data_usage_summary">%1$s מהדאטא שומש</string>
+    <string name="display_summary">הבהירות המסתגלת היא %1$s</string>
+    <string name="sound_summary">עוצמת צלצול היא %1$s</string>
+    <string name="apps_summary">%1$d אפליקציות מותקנות</string>
+    <string name="storage_summary">%1$s מתוך %2$s משומשות</string>
+    <string name="battery_summary">%1$s - בערך %2$s נשארו</string>
+    <string name="battery_charging_wireless">%1$s - נטען בצורה אלחוטית</string>
+    <string name="battery_charging_usb">%1$s - נטען דרך USB</string>
+    <string name="battery_charging_ac">%1$s - נטען דרך החשמל</string>
+    <string name="memory_summary">כרגע %1$s מתוך %2$s זיכרון בשימוש</string>
+    <string name="user_summary">מחובר כ- %1$s</string>
+    <string name="location_on_power">דולק / חיסכון בסוללה</string>
+    <string name="location_on_device">דולק / מכשיר בלבד</string>
+    <string name="location_on_high">דולק / דיוק מירבי</string>
+    <string name="print_summary">%1$d עבודות הדפסה</string>
+    <!-- /SETTINGS -->
+
+    <!-- RECENTS -->
+    <string name="header_recents">אחרונים</string>
+    <string name="enable_recents_double_tap_title">החלפה מהירה</string> <!-- That's how Google calls it -->
+    <string name="enable_recents_double_tap">לחץ לחיצה כפולה על כפתור ה-"אחרונים" על מנת להחליף לאפליקציה האחרונה ששומשה.</string>
+    <string name="double_tap_speed_title">מהירות לחיצה כפולה</string>
+    <string name="recents_button_behavior_title">התנהגות לחיצה על "אחרונים"</string>
+    <string name="recents_navigation_delay_title">עיכוב בניווט</string>
+    <string name="recents_navigation_delay">זמן עד שהאפליקציה הנבחרת תגיע למרכז</string>
+    <string name="enable_large_recents">אפליקציות אחרונות גדולות</string>
+    <string name="no_recents_image">שנה את תמונת ה-"אין אחרונים"</string>
+
+    <string name="no_previous_recents">אין פריטים אחרונים</string>
+
+    <string name="recents_button_behavior_previous">חזור לאפליקציה הקודמת</string>
+    <string name="recents_button_behavior_current">חזור לאפליקציה הנוכחית</string>
+    <string name="recents_button_behavior_cycle">עבור בין אפליקציות</string>
+    <!-- /RECENTS -->
+
+    <!-- STATUS BAR HEADER -->
+    <string name="header_status_bar_header">Status bar header</string>
+    <string name="enable_notification_header">Style header</string>
+    <string name="keep_qs_panel_bg_title">Unaltered QS background</string>
+    <string name="keep_qs_panel_bg">Useful for themes that apply a custom QS panel background</string>
+    <string name="notification_header_qs_tiles_count">QS tiles to show</string>
+    <string name="notification_header_qs_tiles_count_monitor">tiles</string>
+    <string name="battery_tile_show_percentage">Show percentage in battery tile</string>
+    <string name="enable_qs_editor">Enable QS editor</string>
+    <string name="allow_fancy_qs_transition">Fancy QS transition</string>
+    <string name="alternative_header_qs_method_title">Alternative QS loading method</string>
+    <string name="alternative_header_qs_method">Enable when there are positioning issues with the QS icons</string>
+    <string name="enable_new_tile_click_behavior">Android N tile click behavior</string>
+    <string name="enable_new_tile_click_behavior_summary">Clicking a tile in header will toggle it and clicking a tile in the panel will expand it</string>
+    <string name="enable_large_first_row">Enlarge first row</string>
+    <string name="enable_large_first_row_summary">On CM use the configuration menu of the edit tiles mode instead</string>
+    <string name="smaller_header_clock_title">Smaller clock</string>
+    <string name="smaller_header_clock">Lower the text size of the clock in the expanded header. Useful for small screens</string>
+    <string name="notification_full_width_volume_title">Full width volume dialog</string>
+    <string name="notification_full_width_volume">Remove volume dialog width limit for phones with large display</string>
+    <!-- Hide header icons -->
+    <string name="hide_icons_title">Hide header items</string>
+    <string name="hide_tuner_icon_title">Hide SystemUI Tuner icon</string>
+    <string name="hide_edit_tiles_title">Hide edit tiles button</string>
+    <string name="hide_carrier_label_title">Hide carrier label</string>
+    <!-- /Hide header icons -->
+    <!-- /STATUS BAR HEADER -->
+
+    <!-- NOTIFICATIONS -->
+    <string name="header_notifications">Notifications</string>
+    <string name="notifications_change_style">Style Notifications</string>
+    <string name="notification_dismiss_button_title">Change dismiss button</string>
+    <string name="notification_dismiss_button">Show \"CLEAR ALL\" instead of dismiss icon</string>
+    <string name="action_search">Search</string>
+    <string name="notification_blacklisted_apps_title">Blacklisted apps</string>
+    <string name="notification_blacklisted_apps">Use old notification style for these apps</string>
+    <string name="notifications_custom_color_title">Use custom accent color</string>
+    <string name="notifications_accent_color_title">Accent color</string>
+    <string name="notifications_custom_actions_color_title">Use custom actions background color</string>
+    <string name="notifications_actions_color_title">Actions background color</string>
+    <!-- /NOTIFICATIONS -->
+
+    <!-- UPDATE -->
+    <string name="update_notification_title">New update available</string>
+    <string name="update_notification">Build %1$d is now available to update!</string>
+    <string name="update_notification_download">Update</string>
+    <string name="check_for_updates_title">Check for updates</string>
+    <string name="check_for_updates">Check for updates on app start</string>
+    <string name="checking_for_update">Checking for updates…</string>
+    <string name="check_for_update_fail">Couldn\'t check for updates</string>
+    <string name="no_updates">No newer versions found</string>
+    <string name="update_notification_downloading">Downloading update</string>
+    <string name="update_notification_downloading_details">Downloading build %1$d</string>
+    <string name="update_notification_download_fail">Download failed</string>
+    <string name="update_notification_download_fail_details">Failed to download build %1$d</string>
+    <!-- /UPDATE -->
+
+    <!-- EMERGENCY -->
+    <string name="emergency_info">Emergency Info</string>
+    <string name="enable_emergency_info_title">Enable Emergency Info</string>
+    <string name="edit_emergency_info_title">Edit Emergency Info</string>
+
+    <string name="header_personal">Personal</string>
+    <string name="info_fullname">Full name</string>
+    <string name="info_address">Address</string>
+    <string name="info_birthdate">Date of birth</string>
+
+    <string name="header_medical">Medical</string>
+    <string name="info_bloodtype">Blood type</string>
+    <string name="info_allergies">Allergies</string>
+    <string name="info_medications">Medications</string>
+    <string name="info_medicalnotes">Medical conditions and notes</string>
+    <string name="info_organdonor">Organ donor</string>
+
+    <string name="info_unspecified">None specified</string>
+
+    <string name="info_bloodtype_op">O+</string>
+    <string name="info_bloodtype_on">O-</string>
+    <string name="info_bloodtype_ap">A+</string>
+    <string name="info_bloodtype_an">A-</string>
+    <string name="info_bloodtype_bp">B+</string>
+    <string name="info_bloodtype_bn">B-</string>
+    <string name="info_bloodtype_abp">AB+</string>
+    <string name="info_bloodtype_abn">AB-</string>
+    <!-- /EMERGENCY -->
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- BATTERY -->
+    <string name="battery">Battery</string>
+    <string name="charged">Charged</string>
+    <string name="charging">Charging, %1$s</string>
+    <!-- /BATTERY -->
+
+    <!-- QS -->
+    <string name="qs_edit">Edit</string>
+    <string name="qs_edit_detail">Edit tiles</string>
+    <!-- /QS -->
+</resources>
 
